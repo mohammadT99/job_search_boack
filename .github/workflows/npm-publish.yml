@@ -27,9 +27,9 @@ jobs:
       - name: Deploy to server
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.103.75.198.161 }}
-          username: ${{ secrets.root }}
-          password: ${{ secrets.exjfstaC9t8kWDl4 }}
+          host: ${{103.75.198.161}}
+          username: ${{root }}
+          password: ${{exjfstaC9t8kWDl4}}
           script: |
             cd /path/to/your/project
             git pull origin main
