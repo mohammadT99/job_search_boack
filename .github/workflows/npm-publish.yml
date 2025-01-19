@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Build frontend
-        run: npm run start
+        run: npm  start
 
       - name: Deploy to server
         uses: appleboy/ssh-action@master
@@ -34,5 +34,5 @@ jobs:
             cd /path/to/your/project
             git pull origin main
             npm install
-            npm run build
+            npm start
             pm2 restart all
